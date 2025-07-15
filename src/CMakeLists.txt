@@ -1,6 +1,4 @@
 file(GLOB SRC_FILES "*.cpp")
 
-add_executable(advanced_cpp ${SRC_FILES})
+set(PROJECT_SOURCES ${SRC_FILES} PARENT_SCOPE)
 
-# Link utils (if it’s a library)
-target_link_libraries(advanced_cpp utils)

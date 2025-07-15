@@ -10,9 +10,9 @@ using namespace std;
  */
 
 void LOG(const char* message) {
-    cout << message << endl;
+    cout << "[LOG] : " << message << endl;
 }
 
 void LOG2(const char* message){
-    cout<<"LOG2: "<<message<<endl;
+    cout<<"[LOG2] : " << message << endl;
 }

@@ -1,4 +1,5 @@
 .vscode/*
-Basics/output
-
 *.exe
+
+build/*
+
