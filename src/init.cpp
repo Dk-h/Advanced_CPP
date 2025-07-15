@@ -1,6 +1,10 @@
 #include <iostream>
 
+using namespace std;
+// #include "log.cpp"
+
 void LOG(const char* message);
+void LOG2(const char* message);
 
 /**
  * @brief Entry point of the program.
@@ -11,7 +15,7 @@ void LOG(const char* message);
  * @return int Returns 0 upon successful execution.
  */
 int main() {
-    LOG("Hello, World! <printed from init.cpp>");
-    std::cin.get();
+    LOG2("Hello, World! <printed from init.cpp>");
+    cin.get();
     return 0;
 }

@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 
 /**
  * @brief Logs a message to the standard output.
@@ -7,6 +8,11 @@
  * 
  * @param message The message to be logged.
  */
+
 void LOG(const char* message) {
-    std::cout << message << std::endl;
+    cout << message << endl;
+}
+
+void LOG2(const char* message){
+    cout<<"LOG2: "<<message<<endl;
 }
