@@ -1,10 +1,8 @@
 #include <iostream>
 #include "shapes.h"
+#include "logger.cpp"
 
 using namespace std;
-
-void LOG(const char* message);
-void LOG2(const char* message);
 
 /**
  * @brief Entry point of the program.
@@ -16,13 +14,18 @@ void LOG2(const char* message);
  */
 int main() {
     LOG("Hello, World! <printed from init.cpp>");
-    LOG2("Hello, World! <printed from init.cpp>");
-
+    
+    LOG("Enter a value to calculate its square and cube:");
     int a; cin>>a;
-    cout<< "Square of "<< a<<" is "<< squarea(a)<< endl;
-    cout<< "Cube of "<< a<<" is "<< cubea(a)<< endl;
-    cin.get();
+    LOG("Square of ", a, " is " , squarea(a));
+    LOG("Cube of ", a, " is ", cubea(a));
     
+    PassByReference(a);
+    LOG("Value after PassByReference:", a);
     
+    cout << "Press Enter to exit..." << endl;
+
+    cin.ignore();
+    cin.get(); // Wait for user input before exiting
     return 0;
 }
