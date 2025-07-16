@@ -1,4 +1,4 @@
 file(GLOB SRC_FILES "*.cpp")
 
-set(PROJECT_SOURCES ${SRC_FILES} PARENT_SCOPE)
-
+# Add source files to the main executable
+target_sources(${PROJECT_NAME} PRIVATE ${SRC_FILES})
